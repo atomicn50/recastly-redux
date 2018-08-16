@@ -4,13 +4,11 @@ import { connect } from 'react-redux';
 import handleSearchChange from '../actions/search.js';
 
 
-const mapDispatchToProps = dispatch => {
-  return {
+const mapDispatchToProps = (dispatch) => ({
     handleSearchInputChange: q => {
       dispatch(handleSearchChange(q))
     }
-  }
-}
+});
 
 const SearchContainer = connect (
   null,
